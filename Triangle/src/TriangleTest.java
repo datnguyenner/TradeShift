@@ -18,12 +18,16 @@ public class TriangleTest {
         Triangle isosceles = new Triangle(4.0, 4.0, 3);
         Triangle isosceles2 = new Triangle(4.0, 1, 4.0);
         Triangle notATriangle = new Triangle(1, 0, 1);
+        Triangle notATriangle2 = new Triangle(-1, -1, 1);
+
 
         assertEquals("Scalene", scalene.triangleType());
         assertEquals("Equilateral", equilateral.triangleType());
         assertEquals("Isosceles", isosceles.triangleType());
-        assertEquals("Invalid", notATriangle.triangleType());
         assertEquals("Isosceles", isosceles2.triangleType());
+        assertEquals("Invalid", notATriangle.triangleType());
+        assertEquals("Invalid", notATriangle2.triangleType());
+
 
     }
 

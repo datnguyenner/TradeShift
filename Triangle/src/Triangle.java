@@ -29,7 +29,7 @@ public class Triangle {
      * return the String representation of the types of triangle
      */
     public String triangleType(){
-        if(length1==0 || length2 == 0 || length3==0){
+        if(length1 <= 0 || length2 <= 0 || length3 <= 0){
             return "Invalid";
         }
         else if(length1==length2 && length1==length3){
