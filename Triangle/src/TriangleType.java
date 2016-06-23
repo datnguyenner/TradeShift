@@ -12,6 +12,7 @@ public class TriangleType {
         int sides = triangle.sides; //Retrieve the number of sides property from Triangle object
         String[] arrayOfSides = new String[sides];
         for(int i = 0; i < sides; i++){
+            System.out.println("Please enter length "+(i+1));
             arrayOfSides[i] = sc.next(); //sides property will determine the # of inputs
         }
 
